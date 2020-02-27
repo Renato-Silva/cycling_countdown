@@ -3,13 +3,32 @@ var events = require('./events');
 var Twitter = require('twitter');
 var moment = require('moment');
 var schedule = require('node-schedule');
+var weather = require('openweather-apis');
+
+/*
+console.log(config.openweathermap);
+
+weather.setLang('en');
+weather.setAPPID(config.openweathermap);
+weather.setUnits('metric');
+
+weather.setCity('Roubaix');
+weather.getAllWeather(function(err, JSONObj){
+        console.log(JSONObj);
+});
+*/
 
 
 //Interval vetween tweets in minutes
 var interval = 5;
 
-//var client = new Twitter(config.credentials);
+var client = new Twitter(config.credentials);
 
+//postTweet(client, "This is a test");
+//postRetweet(client, "1104341929733619713");
+
+
+//checkEvents();
 
 
 //0 10 * * *
@@ -32,15 +51,23 @@ function checkEvents(){
 
         if(!isPast){
             if(days == "today"){
+                if(obj.retweet != null){
+                    postRetweet(client, obj.retweet);
+                }
+
+
                 var tweet = composeTweetDaysToday(days, obj);
-                //postTweet(client, tweet);
-                console.log(tweet);
+                postTweet(client, tweet);
+                //console.log(tweet);
+
+
+
                 sleep(interval*1000);
 
             }else if(days != "month"){
                 var tweet = composeTweetDaysLeft(days, obj);
-                //postTweet(client, tweet);
-                console.log(tweet);
+                postTweet(client, tweet);
+                //console.log(tweet);
                 sleep(interval*1000);
 
             }
@@ -50,6 +77,14 @@ function checkEvents(){
     }
 }
 
+
+function postRetweet(client, tweetID){
+    client.post('statuses/retweet/' + tweetID, function(error, tweet, response) {
+  if (!error) {
+    console.log(tweet);
+  }
+});
+}
 
 function postTweet(client, tweet){
     client.post('statuses/update', {

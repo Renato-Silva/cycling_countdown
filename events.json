@@ -21,102 +21,116 @@
         "show": true
     },
     {
-        "name": "Omloop Het Nieuwsblad Elite",
+        "name": "Omloop Het Nieuwsblad",
         "date": "2020-02-29",
         "hashtag": "#omloophnb",
         "twitter": "@omloop",
-        "show": true
+        "show": true,
+        "retweet": "1104341929733619713"
     },
     {
         "name": "Strade Bianche",
         "date": "2020-03-07",
         "hashtag": "#StradeBianche",
         "twitter": "@StradeBianche",
-        "show": true
+        "show": true,
+        "retweet": "1104417245479030786"
     },
     {
         "name": "Paris-Nice",
         "date": "2020-03-08",
         "hashtag": "#ParisNice",
         "twitter": "@ParisNice",
-        "show": true
+        "show": true,
+        "retweet": "1107327298297044992"
     },
     {
         "name": "Tirreno-Adriatico",
         "date": "2020-03-11",
         "hashtag": "#TirrenoAdriatico",
         "twitter": "@TirrenAdriatico",
-        "show": true
+        "show": true,
+        "retweet": "1108031288408195073"
     },
     {
         "name": "Milano-Sanremo",
         "date": "2020-03-21",
         "hashtag": "#MilanoSanremo",
         "twitter": "@Milano_Sanremo",
-        "show": true
+        "show": true,
+        "retweet": "1109484679999246337"
     },
     {
         "name": "Volta a Catalunya",
         "date": "2020-03-23",
         "hashtag": "#VoltaCatalunya",
         "twitter": "@VoltaCatalunya",
-        "show": true
+        "show": true,
+        "retweet": "1112387638533804038"
     },
     {
         "name": "Gent-Wevelgem",
         "date": "2020-03-29",
         "hashtag": "#GW20",
         "twitter": "@GentWevelgem",
-        "show": true
+        "show": true,
+        "retweet": "1112368050228158464"
     },
     {
         "name": "Dwars door Vlaanderen",
         "date": "2020-04-01",
         "hashtag": "#DDV20",
         "twitter": "@DwarsdrVlaander",
-        "show": true
+        "show": true,
+        "retweet": "1113454685493637121"
     },
     {
         "name": "Ronde van Vlaanderen",
         "date": "2020-04-05",
         "hashtag": "#RVV20",
         "twitter": "@RondeVlaanderen",
-        "show": true
+        "show": true,
+        "retweet": "1115205815764492288"
     },
     {
         "name": "Itzulia Basque Country",
         "date": "2020-04-06",
         "hashtag": "#itzulia",
         "twitter": "@ehitzulia",
-        "show": true
+        "show": true,
+        "retweet": "1117111475456311297"
     },
     {
         "name": "Paris-Roubaix",
         "date": "2020-04-12",
         "hashtag": "#ParisRoubaix",
         "twitter": "@Paris_Roubaix",
-        "show": true
+        "show": true,
+        "retweet": "1117457769857261569"
     },
     {
         "name": "Amstel Gold Race",
         "date": "2020-04-19",
         "hashtag": "#AmstelGoldRace",
         "twitter": "@Amstelgoldrace",
-        "show": true
+        "show": true,
+        "retweet": "1119990553972752384"
     },
     {
         "name": "La Flèche Wallonne",
         "date": "2020-04-22",
         "hashtag": "#FlecheWallonne",
         "twitter": "@flechewallonne",
-        "show": true
+        "show": true,
+        "retweet": "1121078708687843330"
     },
     {
         "name": "Liège-Bastogne-Liège",
         "date": "2020-04-26",
         "hashtag": "#LBL",
         "twitter": "@LiegeBastogneL",
-        "show": true
+        "show": true,
+        "retweet": "1122516313820336129"
     },
     {
         "name": "Tour de Romandie",
@@ -193,6 +207,13 @@
         "date": "2020-08-31",
         "hashtag": "#BinckBankTour",
         "twitter": "@BinckBankTour",
+        "show": true
+    },
+    {
+        "name": "Tour of Britain",
+        "date": "2020-09-06",
+        "hashtag": "#TourOfBritain",
+        "twitter": "@TourofBritain",
         "show": true
     },
     {
