@@ -51,13 +51,15 @@ function checkEvents(){
 
         if(!isPast){
             if(days == "today"){
+                var tweet = composeTweetDaysToday(days, obj);
                 if(obj.retweet != null){
-                    postRetweet(client, obj.retweet);
+                    postRetweet(client, obj.retweet, tweet);
+                }else{
+
+                    postTweet(client, tweet);
                 }
 
 
-                var tweet = composeTweetDaysToday(days, obj);
-                postTweet(client, tweet);
                 //console.log(tweet);
 
 
@@ -78,12 +80,15 @@ function checkEvents(){
 }
 
 
-function postRetweet(client, tweetID){
-    client.post('statuses/retweet/' + tweetID, function(error, tweet, response) {
-  if (!error) {
-    console.log(tweet);
-  }
-});
+function postRetweet(client, tweetID, tweet){
+    client.post('statuses/retweet/' + tweetID,{
+      status: tweet
+    },
+     function(error, tweet, response) {
+          if (!error) {
+            console.log(tweet);
+          }
+      });
 }
 
 function postTweet(client, tweet){
