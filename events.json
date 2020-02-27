@@ -1,5 +1,26 @@
 [
     {
+        "name": "Santos Tour Down Under",
+        "date": "2020-01-21",
+        "hashtag": "#tourdownunder",
+        "twitter": "@tourdownunder",
+        "show": true
+    },
+    {
+        "name": "Cadel Evans Great Ocean Road Race",
+        "date": "2020-02-02",
+        "hashtag": "#CadelRoadRace",
+        "twitter": "@CadelRoadRace",
+        "show": true
+    },
+    {
+        "name": "UAE Tour",
+        "date": "2020-02-23",
+        "hashtag": "#UAETour",
+        "twitter": "@uae_tour",
+        "show": true
+    },
+    {
         "name": "Omloop Het Nieuwsblad Elite",
         "date": "2020-02-29",
         "hashtag": "#omloophnb",
@@ -116,6 +137,90 @@
         "date": "2020-05-31",
         "hashtag": "#Dauphiné",
         "twitter": "@dauphine",
+        "show": true
+    },
+    {
+        "name": "Tour de Suisse",
+        "date": "2020-06-06",
+        "hashtag": "#tourdesuisse",
+        "twitter": "@tds",
+        "show": true
+    },
+    {
+        "name": "Tour de France",
+        "date": "2020-06-27",
+        "hashtag": "#TDF2020",
+        "twitter": "@LeTour",
+        "show": true
+    },
+    {
+        "name": "Tour de Pologne",
+        "date": "2020-07-05",
+        "hashtag": "#TdP2020",
+        "twitter": "@Tour_de_Pologne",
+        "show": true
+    },
+    {
+        "name": "Donostia San Sebastian Klasikoa",
+        "date": "2020-07-25",
+        "hashtag": "#klasikoa",
+        "twitter": "@dklasikoa",
+        "show": true
+    },
+    {
+        "name": "La Vuelta",
+        "date": "2020-08-14",
+        "hashtag": "#LaVuelta20",
+        "twitter": "@lavuelta",
+        "show": true
+    },
+    {
+        "name": "Hamburg Cyclassics",
+        "date": "2020-08-16",
+        "hashtag": "",
+        "twitter": "",
+        "show": true
+    },
+    {
+        "name": "Prudential RideLondon-Surrey Classic",
+        "date": "2020-08-16",
+        "hashtag": "#RideLondon",
+        "twitter": "@RideLondon",
+        "show": true
+    },
+    {
+        "name": "BinckBank Tour",
+        "date": "2020-08-31",
+        "hashtag": "#BinckBankTour",
+        "twitter": "@BinckBankTour",
+        "show": true
+    },
+    {
+        "name": "Grand Prix Cycliste de Québec",
+        "date": "2020-09-11",
+        "hashtag": "#GPCQM",
+        "twitter": "@GPCQM",
+        "show": true
+    },
+    {
+        "name": "Grand Prix Cycliste de Montréal",
+        "date": "2020-09-13",
+        "hashtag": "#GPCQM",
+        "twitter": "@GPCQM",
+        "show": true
+    },
+    {
+        "name": "Il Lombardia",
+        "date": "2020-10-10",
+        "hashtag": "#ILombardia",
+        "twitter": "@Il_Lombardia",
+        "show": true
+    },
+    {
+        "name": "Tour of Guangxi",
+        "date": "2020-10-15",
+        "hashtag": "#TourofGuangxi",
+        "twitter": "@TourofGuangxi",
         "show": true
     }
 ]

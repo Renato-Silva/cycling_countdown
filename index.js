@@ -1,4 +1,4 @@
-var config = require('./config');
+var config = require('./config.production');
 var events = require('./events');
 var Twitter = require('twitter');
 var moment = require('moment');
@@ -9,19 +9,6 @@ var schedule = require('node-schedule');
 //var client = new Twitter(config.credentials);
 
 
-
-/**
- * Set interval to compose and send tweets.
- */
-/*setInterval(function() {
-  client.post('statuses/update', {
-    status: composeTweet()
-  }, function(err, tweet, res) {
-    if(err) console.log(err);
-    console.log('Tweet posted: ', tweet);
-});
-    checkEvents();
-}, config.interval);*/
 
 //0 10 * * *
 var j = schedule.scheduleJob('* * * * *', function(){
@@ -37,17 +24,38 @@ function checkEvents(){
 
         var days = daysLeft(obj.date);
 
-        if(days == "today"){
-            console.log(composeTweetDaysToday(days, obj));
-        }else if(days != "month"){
-            console.log(composeTweetDaysLeft(days, obj));
+
+        var isPast = moment(moment()).isAfter(obj.date);
+
+        if(!isPast){
+            if(days == "today"){
+                var tweet = composeTweetDaysToday(days, obj);
+                //postTweet(client, tweet);
+                console.log(tweet);
+                sleep(3000);
+
+            }else if(days != "month"){
+                var tweet = composeTweetDaysLeft(days, obj);
+                //postTweet(client, tweet);
+                console.log(tweet);
+                sleep(3000);
+
+            }
+
         }
-
-
 
     }
 }
 
+
+function postTweet(client, tweet){
+    client.post('statuses/update', {
+      status: tweet
+    }, function(err, tweet, res) {
+      if(err) console.log(err);
+      console.log('Tweet posted: ', tweet);
+  });
+}
 
 
 function composeTweetDaysLeft(days, event) {
@@ -105,4 +113,14 @@ function daysLeft(date) {
 
     // x days
     return left.humanize();
+}
+
+
+
+function sleep(milliseconds) {
+  const date = Date.now();
+  let currentDate = null;
+  do {
+    currentDate = Date.now();
+  } while (currentDate - date < milliseconds);
 }
