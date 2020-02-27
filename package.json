@@ -1,7 +1,7 @@
 {
   "name": "cycling_countdown",
   "version": "1.0.0",
-  "description": "Cycling Races Countdown",
+  "description": "Cycling races countdown Twitter Bot",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -17,7 +17,7 @@
     "countdown"
   ],
   "author": "Renato Silva",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/Renato-Silva/cycling_countdown/issues"
   },
