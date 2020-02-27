@@ -5,13 +5,16 @@ var moment = require('moment');
 var schedule = require('node-schedule');
 
 
+//Interval vetween tweets in minutes
+var interval = 5;
 
 //var client = new Twitter(config.credentials);
 
 
 
 //0 10 * * *
-var j = schedule.scheduleJob('* * * * *', function(){
+// Run every day at 10am
+var j = schedule.scheduleJob('0 10 * * *', function(){
     checkEvents();
 });
 
@@ -32,13 +35,13 @@ function checkEvents(){
                 var tweet = composeTweetDaysToday(days, obj);
                 //postTweet(client, tweet);
                 console.log(tweet);
-                sleep(3000);
+                sleep(interval*1000);
 
             }else if(days != "month"){
                 var tweet = composeTweetDaysLeft(days, obj);
                 //postTweet(client, tweet);
                 console.log(tweet);
-                sleep(3000);
+                sleep(interval*1000);
 
             }
 
