@@ -1,0 +1,121 @@
+[
+    {
+        "name": "Omloop Het Nieuwsblad Elite",
+        "date": "2020-02-29",
+        "hashtag": "#omloophnb",
+        "twitter": "@omloop",
+        "show": true
+    },
+    {
+        "name": "Strade Bianche",
+        "date": "2020-03-07",
+        "hashtag": "#StradeBianche",
+        "twitter": "@StradeBianche",
+        "show": true
+    },
+    {
+        "name": "Paris-Nice",
+        "date": "2020-03-08",
+        "hashtag": "#ParisNice",
+        "twitter": "@ParisNice",
+        "show": true
+    },
+    {
+        "name": "Tirreno-Adriatico",
+        "date": "2020-03-11",
+        "hashtag": "#TirrenoAdriatico",
+        "twitter": "@TirrenAdriatico",
+        "show": true
+    },
+    {
+        "name": "Milano-Sanremo",
+        "date": "2020-03-21",
+        "hashtag": "#MilanoSanremo",
+        "twitter": "@Milano_Sanremo",
+        "show": true
+    },
+    {
+        "name": "Volta a Catalunya",
+        "date": "2020-03-23",
+        "hashtag": "#VoltaCatalunya",
+        "twitter": "@VoltaCatalunya",
+        "show": true
+    },
+    {
+        "name": "Gent-Wevelgem",
+        "date": "2020-03-29",
+        "hashtag": "#GW20",
+        "twitter": "@GentWevelgem",
+        "show": true
+    },
+    {
+        "name": "Dwars door Vlaanderen",
+        "date": "2020-04-01",
+        "hashtag": "#DDV20",
+        "twitter": "@DwarsdrVlaander",
+        "show": true
+    },
+    {
+        "name": "Ronde van Vlaanderen",
+        "date": "2020-04-05",
+        "hashtag": "#RVV20",
+        "twitter": "@RondeVlaanderen",
+        "show": true
+    },
+    {
+        "name": "Itzulia Basque Country",
+        "date": "2020-04-06",
+        "hashtag": "#itzulia",
+        "twitter": "@ehitzulia",
+        "show": true
+    },
+    {
+        "name": "Paris-Roubaix",
+        "date": "2020-04-12",
+        "hashtag": "#ParisRoubaix",
+        "twitter": "@Paris_Roubaix",
+        "show": true
+    },
+    {
+        "name": "Amstel Gold Race",
+        "date": "2020-04-19",
+        "hashtag": "#AmstelGoldRace",
+        "twitter": "@Amstelgoldrace",
+        "show": true
+    },
+    {
+        "name": "La Flèche Wallonne",
+        "date": "2020-04-22",
+        "hashtag": "#FlecheWallonne",
+        "twitter": "@flechewallonne",
+        "show": true
+    },
+    {
+        "name": "Liège-Bastogne-Liège",
+        "date": "2020-04-26",
+        "hashtag": "#LBL",
+        "twitter": "@LiegeBastogneL",
+        "show": true
+    },
+    {
+        "name": "Tour de Romandie",
+        "date": "2020-04-28",
+        "hashtag": "#DR2020",
+        "twitter": "@TourDeRomandie",
+        "show": true
+    },
+    {
+        "name": "Giro d'Italia",
+        "date": "2020-05-09",
+        "hashtag": "#Giro",
+        "twitter": "@giroditalia",
+        "show": true
+    },
+    {
+        "name": "Critérium du Dauphiné",
+        "date": "2020-05-31",
+        "hashtag": "#Dauphiné",
+        "twitter": "@dauphine",
+        "show": true
+    }
+]

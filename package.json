@@ -1,0 +1,29 @@
+{
+  "name": "cycling_countdown",
+  "version": "1.0.0",
+  "description": "Cycling Races Countdown",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Renato-Silva/cycling_countdown.git"
+  },
+  "keywords": [
+    "cycling",
+    "races",
+    "countdown"
+  ],
+  "author": "Renato Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Renato-Silva/cycling_countdown/issues"
+  },
+  "homepage": "https://github.com/Renato-Silva/cycling_countdown#readme",
+  "dependencies": {
+    "moment": "^2.24.0",
+    "node-schedule": "^1.3.2",
+    "twitter": "^1.7.1"
+  }
+}
