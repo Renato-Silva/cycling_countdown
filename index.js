@@ -34,6 +34,7 @@ var client = new Twitter(config.credentials);
 
 console.log("Running for the first time");
 checkEvents();
+console.log("First time finished");
 
 
 //0 10 * * *
@@ -47,6 +48,7 @@ var j = schedule.scheduleJob('0 10 * * *', function(){
 
 function checkEvents(){
     for(var i = 0; i < events.length; i++) {
+        console.log(i);
         var obj = events[i];
 
         var days = daysLeft(obj.date);
@@ -62,19 +64,16 @@ function checkEvents(){
                 }
 
                 postTweet(client, tweet);
-
-
-
                 //console.log(tweet);
 
-
-
+                console.log("sleeping...");
                 sleep(interval*1000);
 
             }else if(days != "month"){
                 var tweet = composeTweetDaysLeft(days, obj);
                 postTweet(client, tweet);
                 //console.log(tweet);
+                console.log("sleeping...");
                 sleep(interval*1000);
 
             }
