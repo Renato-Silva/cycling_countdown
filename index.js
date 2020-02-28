@@ -21,6 +21,8 @@ weather.getAllWeather(function(err, JSONObj){
 */
 
 
+console.log("Starting script");
+
 //Interval vetween tweets in minutes
 var interval = 5;
 
@@ -29,6 +31,8 @@ var client = new Twitter(config.credentials);
 //postTweet(client, "This is a test");
 //postRetweet(client, "1104341929733619713", "Test");
 
+
+console.log("Running for the first time");
 checkEvents();
 
 
@@ -65,13 +69,13 @@ function checkEvents(){
 
 
 
-                sleep(interval*1000);
+                sleep(interval*10000);
 
             }else if(days != "month"){
                 var tweet = composeTweetDaysLeft(days, obj);
                 postTweet(client, tweet);
                 //console.log(tweet);
-                sleep(interval*1000);
+                sleep(interval*10000);
 
             }
 
