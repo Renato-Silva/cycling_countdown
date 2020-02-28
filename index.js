@@ -24,6 +24,8 @@ weather.getAllWeather(function(err, JSONObj){
 //Interval vetween tweets in minutes
 var interval = 5;
 
+console.log(process.env.consumer_key);
+
 //var client = new Twitter(config.credentials);
 var client = new Twitter({
   consumer_key: process.env.consumer_key,
