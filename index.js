@@ -23,8 +23,8 @@ weather.getAllWeather(function(err, JSONObj){
 
 console.log("Starting script");
 
-//Interval vetween tweets in minutes
-var interval = 5;
+//Interval vetween tweets in seconds
+var interval = 120;
 
 var client = new Twitter(config.credentials);
 
@@ -69,13 +69,13 @@ function checkEvents(){
 
 
 
-                sleep(interval*10000);
+                sleep(interval*1000);
 
             }else if(days != "month"){
                 var tweet = composeTweetDaysLeft(days, obj);
                 postTweet(client, tweet);
                 //console.log(tweet);
-                sleep(interval*10000);
+                sleep(interval*1000);
 
             }
 
