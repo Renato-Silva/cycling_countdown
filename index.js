@@ -67,14 +67,14 @@ function checkEvents(){
                 //console.log(tweet);
 
                 console.log("sleeping...");
-                sleep(interval*1000);
+                //sleep(interval*1000);
 
             }else if(days != "month"){
                 var tweet = composeTweetDaysLeft(days, obj);
                 postTweet(client, tweet);
                 //console.log(tweet);
                 console.log("sleeping...");
-                sleep(interval*1000);
+                //sleep(interval*1000);
 
             }
 
