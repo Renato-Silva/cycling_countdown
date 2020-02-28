@@ -5,6 +5,8 @@ var moment = require('moment');
 var schedule = require('node-schedule');
 var weather = require('openweather-apis');
 
+
+
 /*
 console.log(config.openweathermap);
 
@@ -25,10 +27,9 @@ var interval = 5;
 var client = new Twitter(config.credentials);
 
 //postTweet(client, "This is a test");
-//postRetweet(client, "1104341929733619713");
+//postRetweet(client, "1104341929733619713", "Test");
 
-
-//checkEvents();
+checkEvents();
 
 
 //0 10 * * *
@@ -54,10 +55,10 @@ function checkEvents(){
                 var tweet = composeTweetDaysToday(days, obj);
                 if(obj.retweet != null){
                     postRetweet(client, obj.retweet, tweet);
-                }else{
-
-                    postTweet(client, tweet);
                 }
+
+                postTweet(client, tweet);
+
 
 
                 //console.log(tweet);
@@ -80,10 +81,8 @@ function checkEvents(){
 }
 
 
-function postRetweet(client, tweetID, tweet){
-    client.post('statuses/retweet/' + tweetID,{
-      status: tweet
-    },
+function postRetweet(client, tweetID){
+    client.post('statuses/retweet/' + tweetID,
      function(error, tweet, response) {
           if (!error) {
             console.log(tweet);
