@@ -1,4 +1,4 @@
-var config = require('./config.production');
+//var config = require('./config.production');
 var events = require('./events');
 var Twitter = require('twitter');
 var moment = require('moment');
@@ -24,7 +24,13 @@ weather.getAllWeather(function(err, JSONObj){
 //Interval vetween tweets in minutes
 var interval = 5;
 
-var client = new Twitter(config.credentials);
+//var client = new Twitter(config.credentials);
+var client = new Twitter({
+  consumer_key: process.env.consumer_key,
+  consumer_secret: process.env.consumer_secret,
+  access_token_key: process.env.access_token_key,
+  access_token_secret: process.env.access_token_secret
+});
 
 //postTweet(client, "This is a test");
 //postRetweet(client, "1104341929733619713", "Test");
