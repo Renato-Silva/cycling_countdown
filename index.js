@@ -48,7 +48,6 @@ var j = schedule.scheduleJob('0 10 * * *', function(){
 
 function checkEvents(){
     for(var i = 0; i < events.length; i++) {
-        console.log(i);
         var obj = events[i];
 
         var days = daysLeft(obj.date);
@@ -60,20 +59,18 @@ function checkEvents(){
             if(days == "today"){
                 var tweet = composeTweetDaysToday(days, obj);
                 if(obj.retweet != null){
-                    postRetweet(client, obj.retweet, tweet);
+                    //postRetweet(client, obj.retweet, tweet);
                 }
 
-                postTweet(client, tweet);
-                //console.log(tweet);
+                //postTweet(client, tweet);
+                console.log(tweet);
 
-                console.log("sleeping...");
                 //sleep(interval*1000);
 
             }else if(days != "month"){
                 var tweet = composeTweetDaysLeft(days, obj);
-                postTweet(client, tweet);
-                //console.log(tweet);
-                console.log("sleeping...");
+                //postTweet(client, tweet);
+                console.log(tweet);
                 //sleep(interval*1000);
 
             }
@@ -146,9 +143,11 @@ function daysLeft(date) {
     var starts   = moment();
     var ends = moment(date);
 
+
+
     var left = moment.duration(ends.diff(starts));
 
-    if(left._data.days == 0){
+    if(starts.isSame(ends, 'day')){
         return "today";
     }
 
@@ -156,8 +155,15 @@ function daysLeft(date) {
         return "month";
     }
 
+    var days = ends.diff(starts, 'days') + 1;
     // x days
-    return left.humanize();
+    if(days == 1){
+        return "a day"
+    }
+
+    return days + " days";
+    // x days
+    //return left.humanize();
 }
 
 
