@@ -23,7 +23,7 @@ weather.getAllWeather(function(err, JSONObj){
 
 //Interval vetween tweets in minutes
 var interval = 5;
-
+console.log("key");
 console.log(process.env.consumer_key);
 
 //var client = new Twitter(config.credentials);
