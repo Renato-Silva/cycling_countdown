@@ -54,8 +54,16 @@ function checkEvents(){
 
 
         var isPast = moment(moment()).isAfter(obj.date);
-
         if(!isPast){
+            if(days != "month"){
+                var tweet = composeTweetDaysLeft(days, obj);
+                postTweet(client, tweet);
+                console.log(tweet);
+                //sleep(interval*1000);
+
+            }
+
+        }else{
             if(days == "today"){
                 var tweet = composeTweetDaysToday(days, obj);
                 if(obj.retweet != null){
@@ -67,14 +75,7 @@ function checkEvents(){
 
                 //sleep(interval*1000);
 
-            }else if(days != "month"){
-                var tweet = composeTweetDaysLeft(days, obj);
-                postTweet(client, tweet);
-                console.log(tweet);
-                //sleep(interval*1000);
-
             }
-
         }
 
     }
