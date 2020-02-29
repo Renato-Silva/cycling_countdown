@@ -33,8 +33,8 @@ var client = new Twitter(config.credentials);
 
 
 console.log("Running for the first time");
-checkEvents();
-console.log("First time finished");
+//checkEvents();
+//console.log("First time finished");
 
 
 //0 10 * * *
