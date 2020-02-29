@@ -3,11 +3,13 @@
 This is a simple Twitter bot that tweets days until the next races on the calendar.
 
 
-Note this is an early version and a lot is still to do.
+Note this is an early version and a lot is still to do. Very very experimental and unclean code.
+Any help is usefull.
 
 ### TODO:
 - [x] Tweet days left until races within one month
-- [ ] Tweet the weather if the race is the same day
+- [ ] Tweet the weather if the race is the next day
+- [ ] Answer how many days to a certain race if someone tweets us with the hashtag of the race.
 
 
 ### RUN
