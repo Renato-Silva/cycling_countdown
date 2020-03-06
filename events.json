@@ -4,6 +4,7 @@
         "date": "2020-01-21",
         "hashtag": "#tourdownunder",
         "twitter": "@tourdownunder",
+        "cancelled": false,
         "show": true
     },
     {
@@ -11,6 +12,7 @@
         "date": "2020-02-02",
         "hashtag": "#CadelRoadRace",
         "twitter": "@CadelRoadRace",
+        "cancelled": false,
         "show": true
     },
     {
@@ -18,6 +20,7 @@
         "date": "2020-02-23",
         "hashtag": "#UAETour",
         "twitter": "@uae_tour",
+        "cancelled": false,
         "show": true
     },
     {
@@ -25,6 +28,7 @@
         "date": "2020-02-29",
         "hashtag": "#omloophnb",
         "twitter": "@OmloopHNB",
+        "cancelled": false,
         "show": true,
         "retweet": "1104341929733619713"
     },
@@ -33,6 +37,7 @@
         "date": "2020-03-01",
         "hashtag": "#KBK20",
         "twitter": "@KuurneBxlKuurne",
+        "cancelled": false,
         "show": true,
         "retweet": "1102233475590090752"
     },
@@ -41,6 +46,7 @@
         "date": "2020-03-03",
         "hashtag": "#lesamyn",
         "twitter": "@GPSamyn",
+        "cancelled": false,
         "show": true,
         "retweet": "1103201806866354176"
     },
@@ -49,6 +55,7 @@
         "date": "2020-03-07",
         "hashtag": "#StradeBianche",
         "twitter": "@StradeBianche",
+        "cancelled": true,
         "show": true,
         "retweet": "1104417245479030786"
     },
@@ -57,6 +64,7 @@
         "date": "2020-03-08",
         "hashtag": "#ParisNice",
         "twitter": "@ParisNice",
+        "cancelled": false,
         "show": true,
         "retweet": "1107327298297044992"
     },
@@ -65,6 +73,7 @@
         "date": "2020-03-11",
         "hashtag": "#TirrenoAdriatico",
         "twitter": "@TirrenAdriatico",
+        "cancelled": false,
         "show": true,
         "retweet": "1108031288408195073"
     },
@@ -73,6 +82,7 @@
         "date": "2020-03-21",
         "hashtag": "#MilanoSanremo",
         "twitter": "@Milano_Sanremo",
+        "cancelled": false,
         "show": true,
         "retweet": "1109484679999246337"
     },
@@ -81,6 +91,7 @@
         "date": "2020-03-23",
         "hashtag": "#VoltaCatalunya",
         "twitter": "@VoltaCatalunya",
+        "cancelled": false,
         "show": true,
         "retweet": "1112387638533804038"
     },
@@ -89,6 +100,7 @@
         "date": "2020-03-29",
         "hashtag": "#GW20",
         "twitter": "@GentWevelgem",
+        "cancelled": false,
         "show": true,
         "retweet": "1112368050228158464"
     },
@@ -97,6 +109,7 @@
         "date": "2020-04-01",
         "hashtag": "#DDV20",
         "twitter": "@DwarsdrVlaander",
+        "cancelled": false,
         "show": true,
         "retweet": "1113454685493637121"
     },
@@ -105,6 +118,7 @@
         "date": "2020-04-05",
         "hashtag": "#RVV20",
         "twitter": "@RondeVlaanderen",
+        "cancelled": false,
         "show": true,
         "retweet": "1115205815764492288"
     },
@@ -113,6 +127,7 @@
         "date": "2020-04-06",
         "hashtag": "#itzulia",
         "twitter": "@ehitzulia",
+        "cancelled": false,
         "show": true,
         "retweet": "1117111475456311297"
     },
@@ -121,6 +136,7 @@
         "date": "2020-04-12",
         "hashtag": "#ParisRoubaix",
         "twitter": "@Paris_Roubaix",
+        "cancelled": false,
         "show": true,
         "retweet": "1117457769857261569"
     },
@@ -129,6 +145,7 @@
         "date": "2020-04-19",
         "hashtag": "#AmstelGoldRace",
         "twitter": "@Amstelgoldrace",
+        "cancelled": false,
         "show": true,
         "retweet": "1119990553972752384"
     },
@@ -137,6 +154,7 @@
         "date": "2020-04-22",
         "hashtag": "#FlecheWallonne",
         "twitter": "@flechewallonne",
+        "cancelled": false,
         "show": true,
         "retweet": "1121078708687843330"
     },
@@ -145,6 +163,7 @@
         "date": "2020-04-26",
         "hashtag": "#LBL",
         "twitter": "@LiegeBastogneL",
+        "cancelled": false,
         "show": true,
         "retweet": "1122516313820336129"
     },
@@ -153,6 +172,7 @@
         "date": "2020-04-28",
         "hashtag": "#DR2020",
         "twitter": "@TourDeRomandie",
+        "cancelled": false,
         "show": true
     },
     {
@@ -160,6 +180,7 @@
         "date": "2020-05-09",
         "hashtag": "#Giro",
         "twitter": "@giroditalia",
+        "cancelled": false,
         "show": true
     },
     {
@@ -167,6 +188,7 @@
         "date": "2020-05-31",
         "hashtag": "#Dauphiné",
         "twitter": "@dauphine",
+        "cancelled": false,
         "show": true
     },
     {
@@ -174,6 +196,7 @@
         "date": "2020-06-06",
         "hashtag": "#tourdesuisse",
         "twitter": "@tds",
+        "cancelled": false,
         "show": true
     },
     {
@@ -181,6 +204,7 @@
         "date": "2020-06-27",
         "hashtag": "#TDF2020",
         "twitter": "@LeTour",
+        "cancelled": false,
         "show": true
     },
     {
@@ -188,6 +212,7 @@
         "date": "2020-07-05",
         "hashtag": "#TdP2020",
         "twitter": "@Tour_de_Pologne",
+        "cancelled": false,
         "show": true
     },
     {
@@ -195,6 +220,7 @@
         "date": "2020-07-25",
         "hashtag": "#klasikoa",
         "twitter": "@dklasikoa",
+        "cancelled": false,
         "show": true
     },
     {
@@ -202,6 +228,7 @@
         "date": "2020-08-14",
         "hashtag": "#LaVuelta20",
         "twitter": "@lavuelta",
+        "cancelled": false,
         "show": true
     },
     {
@@ -209,6 +236,7 @@
         "date": "2020-08-16",
         "hashtag": "",
         "twitter": "",
+        "cancelled": false,
         "show": true
     },
     {
@@ -216,6 +244,7 @@
         "date": "2020-08-16",
         "hashtag": "#RideLondon",
         "twitter": "@RideLondon",
+        "cancelled": false,
         "show": true
     },
     {
@@ -223,6 +252,7 @@
         "date": "2020-08-31",
         "hashtag": "#BinckBankTour",
         "twitter": "@BinckBankTour",
+        "cancelled": false,
         "show": true
     },
     {
@@ -230,6 +260,7 @@
         "date": "2020-09-06",
         "hashtag": "#TourOfBritain",
         "twitter": "@TourofBritain",
+        "cancelled": false,
         "show": true
     },
     {
@@ -237,6 +268,7 @@
         "date": "2020-09-11",
         "hashtag": "#GPCQM",
         "twitter": "@GPCQM",
+        "cancelled": false,
         "show": true
     },
     {
@@ -244,6 +276,7 @@
         "date": "2020-09-13",
         "hashtag": "#GPCQM",
         "twitter": "@GPCQM",
+        "cancelled": false,
         "show": true
     },
     {
@@ -251,6 +284,7 @@
         "date": "2020-10-10",
         "hashtag": "#ILombardia",
         "twitter": "@Il_Lombardia",
+        "cancelled": false,
         "show": true
     },
     {
@@ -258,6 +292,7 @@
         "date": "2020-10-15",
         "hashtag": "#TourofGuangxi",
         "twitter": "@TourofGuangxi",
+        "cancelled": false,
         "show": true
     }
 ]

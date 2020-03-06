@@ -50,32 +50,38 @@ function checkEvents(){
     for(var i = 0; i < events.length; i++) {
         var obj = events[i];
 
-        var days = daysLeft(obj.date);
+        if(obj.cancelled == false){
 
 
-        var isPast = moment(moment()).isAfter(obj.date);
-        if(!isPast){
-            if(days != "month"){
-                var tweet = composeTweetDaysLeft(days, obj);
-                postTweet(client, tweet);
-                console.log(tweet);
-                //sleep(interval*1000);
+            var days = daysLeft(obj.date);
 
-            }
 
-        }else{
-            if(days == "today"){
-                var tweet = composeTweetDaysToday(days, obj);
-                if(obj.retweet != null){
-                    postRetweet(client, obj.retweet, tweet);
+            var isPast = moment(moment()).isAfter(obj.date);
+            if(!isPast){
+                if(days != "month"){
+                    var tweet = composeTweetDaysLeft(days, obj);
+                    postTweet(client, tweet);
+                    console.log(tweet);
+                    //sleep(interval*1000);
+
                 }
 
-                postTweet(client, tweet);
-                console.log(tweet);
+            }else{
+                if(days == "today"){
+                    var tweet = composeTweetDaysToday(days, obj);
+                    if(obj.retweet != null){
+                        postRetweet(client, obj.retweet, tweet);
+                    }
 
-                //sleep(interval*1000);
+                    postTweet(client, tweet);
+                    console.log(tweet);
 
+                    //sleep(interval*1000);
+
+                }
             }
+        }else{
+            postTweet(client,event.name + "has been cancelled!");
         }
 
     }
