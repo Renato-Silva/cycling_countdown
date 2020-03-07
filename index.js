@@ -32,16 +32,16 @@ var client = new Twitter(config.credentials);
 //postRetweet(client, "1104341929733619713", "Test");
 
 
-console.log("Running for the first time");
-//checkEvents();
+console.log("Running list");
+checkEvents();
 //console.log("First time finished");
 
 
 //0 10 * * *
 // Run every day at 10am
-var j = schedule.scheduleJob('0 10 * * *', function(){
+/*var j = schedule.scheduleJob('0 10 * * *', function(){
     checkEvents();
-});
+});*/
 
 
 
