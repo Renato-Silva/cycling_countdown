@@ -22,7 +22,6 @@ var client = new Twitter(config.credentials);
 
 
 checkEvents();
-//console.log("First time finished");
 
 
 
