@@ -8,7 +8,7 @@ Any help is usefull.
 
 ### TODO:
 - [x] Tweet days left until races within one month
-- [ ] Tweet the weather if the race is the next day
+- [x] Tweet the weather during race days
 - [ ] Answer how many days to a certain race if someone tweets us with the hashtag of the race.
 
 
