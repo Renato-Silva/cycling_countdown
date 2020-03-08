@@ -127,7 +127,7 @@ function getWeatherReport(obj, location){
         var weatherReport =
             "Today's weather at " + obj.name + ": " +
             icon + " " + description + " 🌡️ " + temperature + "ºC 💦 " +
-            humidity + "% 💨 " + speed + "km/h " + direction + "ª (" + location + ") " + obj.twitter + ' ' + obj.hashtag;
+            humidity + "% 💨 " + speed + "km/h " + direction + "º (" + location + ") " + obj.twitter + ' ' + obj.hashtag;
         console.log("Weather: " + weatherReport);
         if(config.post){
             postTweet(client, weatherReport);
