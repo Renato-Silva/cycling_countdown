@@ -161,7 +161,8 @@
     },
     {
         "name": "Paris-Roubaix",
-        "date": "2020-04-12",
+        "begin": "2020-04-12",
+        "end": "2020-04-12",
         "hashtag": "#ParisRoubaix",
         "twitter": "@Paris_Roubaix",
         "cancelled": false,

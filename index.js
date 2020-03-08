@@ -78,7 +78,7 @@ function checkEvents(){
 
             }else{
                 if(config.post){
-                    postTweet(client,obj.name + " has been cancelled!" + obj.twitter + ' ' + obj.hashtag);
+                    postTweet(client,obj.name + " has been cancelled! " + obj.twitter + ' ' + obj.hashtag);
                 }
 
             }
@@ -125,7 +125,7 @@ function getWeatherReport(obj, location){
 
 
         var weatherReport =
-            "Todays weather at " + obj.name + ": " +
+            "Today's weather at " + obj.name + ": " +
             icon + " " + description + " 🌡️ " + temperature + "ºC 💦 " +
             humidity + "% 💨 " + speed + "km/h " + direction + "ª (" + location + ")";
         console.log("Weather: " + weatherReport);
