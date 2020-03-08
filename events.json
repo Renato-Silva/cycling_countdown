@@ -1,31 +1,38 @@
 [
     {
         "name": "Santos Tour Down Under",
-        "date": "2020-01-21",
+        "begin": "2020-01-21",
+        "begin": "2020-01-26",
         "hashtag": "#tourdownunder",
         "twitter": "@tourdownunder",
         "cancelled": false,
-        "show": true
+        "show": true,
+        "retweet": "1221295003432935425"
     },
     {
         "name": "Cadel Evans Great Ocean Road Race",
-        "date": "2020-02-02",
+        "begin": "2020-02-02",
+        "end": "2020-02-02",
         "hashtag": "#CadelRoadRace",
         "twitter": "@CadelRoadRace",
         "cancelled": false,
-        "show": true
+        "show": true,
+        "retweet": "1224899324066222081"
     },
     {
         "name": "UAE Tour",
-        "date": "2020-02-23",
+        "begin": "2020-02-23",
+        "end": "2020-02-29",
         "hashtag": "#UAETour",
         "twitter": "@uae_tour",
         "cancelled": false,
-        "show": true
+        "show": true,
+        "retweet": "1233012219308318720"
     },
     {
         "name": "Omloop Het Nieuwsblad",
-        "date": "2020-02-29",
+        "begin": "2020-02-29",
+        "end": "2020-02-29",
         "hashtag": "#omloophnb",
         "twitter": "@OmloopHNB",
         "cancelled": false,
@@ -34,7 +41,8 @@
     },
     {
         "name": "Kuurne-Bruxelles-Kuurne",
-        "date": "2020-03-01",
+        "begin": "2020-03-01",
+        "end": "2020-03-01",
         "hashtag": "#KBK20",
         "twitter": "@KuurneBxlKuurne",
         "cancelled": false,
@@ -43,7 +51,8 @@
     },
     {
         "name": "Le Samyn",
-        "date": "2020-03-03",
+        "begin": "2020-03-03",
+        "end": "2020-03-03",
         "hashtag": "#lesamyn",
         "twitter": "@GPSamyn",
         "cancelled": false,
@@ -52,7 +61,8 @@
     },
     {
         "name": "Strade Bianche",
-        "date": "2020-03-07",
+        "begin": "2020-03-07",
+        "end": "2020-03-07",
         "hashtag": "#StradeBianche",
         "twitter": "@StradeBianche",
         "cancelled": true,
@@ -61,34 +71,48 @@
     },
     {
         "name": "Paris-Nice",
-        "date": "2020-03-08",
+        "begin": "2020-03-08",
+        "end": "2020-03-15",
         "hashtag": "#ParisNice",
         "twitter": "@ParisNice",
         "cancelled": false,
         "show": true,
-        "retweet": "1107327298297044992"
+        "retweet": "1107327298297044992",
+        "locations": [
+            "Plaisir",
+            "Chalette-sur-Loing",
+            "Chatre",
+            "Saint-Amand-Montrond",
+            "Champier",
+            "Apt",
+            "Saint-Martin-Vesubie",
+            "Nice"
+        ]
     },
     {
         "name": "Tirreno-Adriatico",
-        "date": "2020-03-11",
+        "begin": "2020-03-11",
+        "end": "2020-03-17",
         "hashtag": "#TirrenoAdriatico",
         "twitter": "@TirrenAdriatico",
-        "cancelled": false,
+        "cancelled": true,
         "show": true,
         "retweet": "1108031288408195073"
     },
     {
         "name": "Milano-Sanremo",
-        "date": "2020-03-21",
+        "begin": "2020-03-21",
+        "end": "2020-03-21",
         "hashtag": "#MilanoSanremo",
         "twitter": "@Milano_Sanremo",
-        "cancelled": false,
+        "cancelled": true,
         "show": true,
         "retweet": "1109484679999246337"
     },
     {
         "name": "Volta a Catalunya",
-        "date": "2020-03-23",
+        "begin": "2020-03-23",
+        "end": "2020-03-29",
         "hashtag": "#VoltaCatalunya",
         "twitter": "@VoltaCatalunya",
         "cancelled": false,
@@ -97,7 +121,8 @@
     },
     {
         "name": "Gent-Wevelgem",
-        "date": "2020-03-29",
+        "begin": "2020-03-29",
+        "end": "2020-03-29",
         "hashtag": "#GW20",
         "twitter": "@GentWevelgem",
         "cancelled": false,
@@ -106,7 +131,8 @@
     },
     {
         "name": "Dwars door Vlaanderen",
-        "date": "2020-04-01",
+        "begin": "2020-04-01",
+        "end": "2020-04-01",
         "hashtag": "#DDV20",
         "twitter": "@DwarsdrVlaander",
         "cancelled": false,
@@ -115,7 +141,8 @@
     },
     {
         "name": "Ronde van Vlaanderen",
-        "date": "2020-04-05",
+        "begin": "2020-04-05",
+        "end": "2020-04-05",
         "hashtag": "#RVV20",
         "twitter": "@RondeVlaanderen",
         "cancelled": false,
@@ -124,7 +151,8 @@
     },
     {
         "name": "Itzulia Basque Country",
-        "date": "2020-04-06",
+        "begin": "2020-04-06",
+        "end": "2020-04-11",
         "hashtag": "#itzulia",
         "twitter": "@ehitzulia",
         "cancelled": false,
@@ -142,7 +170,8 @@
     },
     {
         "name": "Amstel Gold Race",
-        "date": "2020-04-19",
+        "begin": "2020-04-19",
+        "end": "2020-04-19",
         "hashtag": "#AmstelGoldRace",
         "twitter": "@Amstelgoldrace",
         "cancelled": false,
@@ -151,7 +180,8 @@
     },
     {
         "name": "La Flèche Wallonne",
-        "date": "2020-04-22",
+        "begin": "2020-04-22",
+        "end": "2020-04-22",
         "hashtag": "#FlecheWallonne",
         "twitter": "@flechewallonne",
         "cancelled": false,
@@ -160,7 +190,8 @@
     },
     {
         "name": "Liège-Bastogne-Liège",
-        "date": "2020-04-26",
+        "begin": "2020-04-26",
+        "end": "2020-04-26",
         "hashtag": "#LBL",
         "twitter": "@LiegeBastogneL",
         "cancelled": false,
@@ -169,130 +200,162 @@
     },
     {
         "name": "Tour de Romandie",
-        "date": "2020-04-28",
+        "begin": "2020-04-28",
+        "end": "2020-05-03",
         "hashtag": "#DR2020",
         "twitter": "@TourDeRomandie",
         "cancelled": false,
-        "show": true
+        "show": true,
+        "retweet": "1125025877371363329"
     },
     {
         "name": "Giro d'Italia",
-        "date": "2020-05-09",
+        "begin": "2020-05-09",
+        "end": "2020-05-31",
         "hashtag": "#Giro",
         "twitter": "@giroditalia",
         "cancelled": false,
-        "show": true
+        "show": true,
+        "retweet": "1135204918544031744"
     },
     {
         "name": "Critérium du Dauphiné",
-        "date": "2020-05-31",
+        "begin": "2020-05-31",
+        "end": "2020-06-07",
         "hashtag": "#Dauphiné",
         "twitter": "@dauphine",
         "cancelled": false,
-        "show": true
+        "show": true,
+        "retweet": "873898873558900736"
     },
     {
         "name": "Tour de Suisse",
-        "date": "2020-06-06",
+        "begin": "2020-06-07",
+        "end": "2020-06-14",
         "hashtag": "#tourdesuisse",
         "twitter": "@tds",
         "cancelled": false,
-        "show": true
+        "show": true,
+        "retweet": "1142086608864366593"
     },
     {
         "name": "Tour de France",
-        "date": "2020-06-27",
+        "begin": "2020-06-27",
+        "end": "2020-07-19",
         "hashtag": "#TDF2020",
         "twitter": "@LeTour",
         "cancelled": false,
-        "show": true
+        "show": true,
+        "retweet": "1155571339668971520"
     },
     {
         "name": "Tour de Pologne",
-        "date": "2020-07-05",
+        "begin": "2020-07-05",
+        "end": "2020-07-11",
         "hashtag": "#TdP2020",
         "twitter": "@Tour_de_Pologne",
         "cancelled": false,
-        "show": true
+        "show": true,
+        "retweet": "1160057005937242112"
     },
     {
         "name": "Donostia San Sebastian Klasikoa",
-        "date": "2020-07-25",
+        "begin": "2020-07-25",
+        "end": "2020-07-25",
         "hashtag": "#klasikoa",
         "twitter": "@dklasikoa",
         "cancelled": false,
-        "show": true
+        "show": true,
+        "retweet": "1157678758276534272"
     },
     {
         "name": "La Vuelta",
-        "date": "2020-08-14",
+        "begin": "2020-08-14",
+        "end": "2020-09-06",
         "hashtag": "#LaVuelta20",
         "twitter": "@lavuelta",
         "cancelled": false,
-        "show": true
+        "show": true,
+        "retweet": "1192018791237996544"
     },
     {
         "name": "Hamburg Cyclassics",
-        "date": "2020-08-16",
+        "begin": "2020-08-16",
+        "end": "2020-08-16",
         "hashtag": "",
         "twitter": "",
         "cancelled": false,
-        "show": true
+        "show": true,
+        "retweet": ""
     },
     {
         "name": "Prudential RideLondon-Surrey Classic",
-        "date": "2020-08-16",
+        "begin": "2020-08-16",
+        "end": "2020-08-16",
         "hashtag": "#RideLondon",
         "twitter": "@RideLondon",
         "cancelled": false,
-        "show": true
+        "show": true,
+        "retweet": "1158065347741790213"
     },
     {
         "name": "BinckBank Tour",
-        "date": "2020-08-31",
+        "begin": "2020-08-31",
+        "end": "2020-09-06",
         "hashtag": "#BinckBankTour",
         "twitter": "@BinckBankTour",
         "cancelled": false,
-        "show": true
+        "show": true,
+        "retweet": ""
     },
     {
         "name": "Tour of Britain",
-        "date": "2020-09-06",
+        "begin": "2020-09-06",
+        "end": "2020-09-13",
         "hashtag": "#TourOfBritain",
         "twitter": "@TourofBritain",
         "cancelled": false,
-        "show": true
+        "show": true,
+        "retweet": ""
     },
     {
         "name": "Grand Prix Cycliste de Québec",
-        "date": "2020-09-11",
+        "begin": "2020-09-11",
+        "end": "2020-09-11",
         "hashtag": "#GPCQM",
         "twitter": "@GPCQM",
         "cancelled": false,
-        "show": true
+        "show": true,
+        "retweet": ""
     },
     {
         "name": "Grand Prix Cycliste de Montréal",
-        "date": "2020-09-13",
+        "begin": "2020-09-13",
+        "end": "2020-09-13",
         "hashtag": "#GPCQM",
         "twitter": "@GPCQM",
         "cancelled": false,
-        "show": true
+        "show": true,
+        "retweet": ""
     },
     {
         "name": "Il Lombardia",
-        "date": "2020-10-10",
+        "begin": "2020-10-10",
+        "end": "2020-10-10",
         "hashtag": "#ILombardia",
         "twitter": "@Il_Lombardia",
         "cancelled": false,
-        "show": true
+        "show": true,
+        "retweet": ""
     },
     {
         "name": "Tour of Guangxi",
-        "date": "2020-10-15",
+        "begin": "2020-10-15",
+        "end": "2020-10-20",
         "hashtag": "#TourofGuangxi",
         "twitter": "@TourofGuangxi",
         "cancelled": false,
-        "show": true
+        "show": true,
+        "retweet": ""
     }
 ]

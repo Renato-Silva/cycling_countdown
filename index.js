@@ -6,86 +6,166 @@ var schedule = require('node-schedule');
 var weather = require('openweather-apis');
 
 
-
-/*
-console.log(config.openweathermap);
-
-weather.setLang('en');
-weather.setAPPID(config.openweathermap);
-weather.setUnits('metric');
-
-weather.setCity('Roubaix');
-weather.getAllWeather(function(err, JSONObj){
-        console.log(JSONObj);
-});
-*/
+//////////////////////////////////////////////////////
+/////                                            /////
+/////       Cycling Countdown @DaysCycling       /////
+/////                                            /////
+//////////////////////////////////////////////////////
 
 
-console.log("Starting script");
+console.log("The bot has started");
 
-//Interval vetween tweets in seconds
-var interval = 120;
 
+//Create a new twitter client
 var client = new Twitter(config.credentials);
 
-//postTweet(client, "This is a test");
-//postRetweet(client, "1104341929733619713", "Test");
 
 
-console.log("Running list");
 checkEvents();
 //console.log("First time finished");
-
-
-//0 10 * * *
-// Run every day at 10am
-/*var j = schedule.scheduleJob('0 10 * * *', function(){
-    checkEvents();
-});*/
-
 
 
 
 function checkEvents(){
     for(var i = 0; i < events.length; i++) {
         var obj = events[i];
+        console.log("Event: " + obj.name)
 
-        if(obj.cancelled == false){
+        var hasEnded =  moment(moment()).isAfter(obj.end);
 
+        //Check if event is to show and end date has not passed
+        if(obj.show == true && !hasEnded){
 
-            var days = daysLeft(obj.date);
+            //Check if the event has been cancelled
+            if(obj.cancelled == false){
 
-
-            var isPast = moment(moment()).isAfter(obj.date);
-            if(!isPast){
-                if(days != "month"){
-                    var tweet = composeTweetDaysLeft(days, obj);
-                    postTweet(client, tweet);
-                    console.log(tweet);
-                    //sleep(interval*1000);
-
-                }
-
-            }else{
-                if(days == "today"){
-                    var tweet = composeTweetDaysToday(days, obj);
-                    if(obj.retweet != null){
-                        postRetweet(client, obj.retweet, tweet);
+                //Number of days left
+                var daysLeft = daysLeftText(obj.begin);
+                var isPast = moment(moment()).isAfter(obj.begin);
+                if(!isPast){
+                    if(daysLeft != "month"){
+                        var tweet = composeTweetDaysLeft(daysLeft, obj);
+                        if(config.post){
+                            postTweet(client, tweet);
+                        }
+                        console.log("Tweet: " + tweet);
                     }
 
-                    postTweet(client, tweet);
-                    console.log(tweet);
+                }else{
+                    if(daysLeft == "today"){
+                        var tweet = composeTweetDaysToday(daysLeft, obj);
+                        if(config.post){
+                            if(obj.retweet != null){
+                                postRetweet(client, obj.retweet, tweet);
+                            }
+                            postTweet(client, tweet);
+                        }
+                        console.log("Tweet: " + tweet);
 
-                    //sleep(interval*1000);
+                    }
+                }
+
+                //Post daily weather report
+                //Check if locations are defined
+                if(obj.locations != undefined){
+                    var stageNumber = getStageNumber(obj);
+                    console.log("Stage today: " + stageNumber);
+                    console.log("Location: " + obj.locations[stageNumber]);
+
+                    getWeatherReport(obj,obj.locations[stageNumber]);
 
                 }
+
+
+            }else{
+                if(config.post){
+                    postTweet(client,obj.name + " has been cancelled!");
+                }
+
             }
-        }else{
-            postTweet(client,event.name + "has been cancelled!");
+
+
+
         }
+
 
     }
 }
+
+
+function getStageNumber(event){
+    var now   = moment();
+    var starts = moment(event.begin);
+    var stage = moment.duration(starts.diff(now, 'days'));
+    return Math.abs(stage);
+}
+
+
+
+function getWeatherReport(obj, location){
+    weather.setLang('en');
+    weather.setAPPID(config.openweathermap);
+    weather.setUnits('metric');
+
+    weather.setCity(location);
+
+    weather.getAllWeather(function(err, JSONObj){
+
+        //Description
+        var description = JSONObj.weather[0].main;
+        //Icon
+        var icon = getWeatherIcon(JSONObj.weather[0].icon);
+        //Temperature
+        var temperature = JSONObj.main.temp;
+        //hHumidity
+        var humidity = JSONObj.main.humidity;
+        //Wind speed
+        var speed = JSONObj.wind.speed;
+        //Wind direction
+        var direction = JSONObj.wind.deg;
+
+
+        var weatherReport =
+            "Todays weather at " + obj.name + ": " +
+            icon + " " + description + " 🌡️ " + temperature + "ºC 💦 " +
+            humidity + "% 💨 " + speed + "km/h " + direction + "ª (" + location + ")";
+        console.log("Weather: " + weatherReport);
+        if(config.post){
+            postTweet(client, weatherReport);
+        }
+
+    });
+
+}
+
+/*
+ *  Generate the icon for the weather
+ */
+function getWeatherIcon(code){
+    switch(code.substring(0, 2)) {
+        case '01':
+            return '☀️';
+        case '02':
+            return '🌤';
+        case '03':
+            return '🌥';
+        case '04':
+            return '☁️';
+        case '09':
+            return '🌦️';
+        case '10':
+            return '🌧️';
+        case '11':
+            return '⛈️';
+        case '13':
+            return '❄️';
+        case '50':
+            return '🌫️';
+        default:
+            return '☀️';
+    }
+}
+
 
 
 function postRetweet(client, tweetID){
@@ -146,7 +226,7 @@ function composeTweetDaysToday(days, event) {
 }
 
 
-function daysLeft(date) {
+function daysLeftText(date) {
     var starts   = moment();
     var ends = moment(date);
 
@@ -171,14 +251,4 @@ function daysLeft(date) {
     return days + " days";
     // x days
     //return left.humanize();
-}
-
-
-
-function sleep(milliseconds) {
-  const date = Date.now();
-  let currentDate = null;
-  do {
-    currentDate = Date.now();
-  } while (currentDate - date < milliseconds);
 }
