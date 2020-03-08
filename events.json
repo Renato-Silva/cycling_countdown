@@ -127,7 +127,10 @@
         "twitter": "@GentWevelgem",
         "cancelled": false,
         "show": true,
-        "retweet": "1112368050228158464"
+        "retweet": "1112368050228158464",
+        "locations": [
+            "Wevelgem"
+        ]
     },
     {
         "name": "Dwars door Vlaanderen",
@@ -137,7 +140,10 @@
         "twitter": "@DwarsdrVlaander",
         "cancelled": false,
         "show": true,
-        "retweet": "1113454685493637121"
+        "retweet": "1113454685493637121",
+        "locations": [
+            "Waregem"
+        ]
     },
     {
         "name": "Ronde van Vlaanderen",
@@ -147,7 +153,10 @@
         "twitter": "@RondeVlaanderen",
         "cancelled": false,
         "show": true,
-        "retweet": "1115205815764492288"
+        "retweet": "1115205815764492288",
+        "locations": [
+            "Oudenaarde"
+        ]
     },
     {
         "name": "Itzulia Basque Country",
@@ -157,7 +166,15 @@
         "twitter": "@ehitzulia",
         "cancelled": false,
         "show": true,
-        "retweet": "1117111475456311297"
+        "retweet": "1117111475456311297",
+        "locations": [
+            "Arrate",
+            "Laudio",
+            "Urrugne",
+            "Errenteria",
+            "Sestao",
+            "Bilbao"
+        ]
     },
     {
         "name": "Paris-Roubaix",
@@ -167,7 +184,10 @@
         "twitter": "@Paris_Roubaix",
         "cancelled": false,
         "show": true,
-        "retweet": "1117457769857261569"
+        "retweet": "1117457769857261569",
+        "locations": [
+            "Roubaix"
+        ]
     },
     {
         "name": "Amstel Gold Race",
@@ -177,7 +197,10 @@
         "twitter": "@Amstelgoldrace",
         "cancelled": false,
         "show": true,
-        "retweet": "1119990553972752384"
+        "retweet": "1119990553972752384",
+        "locations": [
+            "Vilt"
+        ]
     },
     {
         "name": "La Flèche Wallonne",
@@ -187,7 +210,10 @@
         "twitter": "@flechewallonne",
         "cancelled": false,
         "show": true,
-        "retweet": "1121078708687843330"
+        "retweet": "1121078708687843330",
+        "locations": [
+            "Huy"
+        ]
     },
     {
         "name": "Liège-Bastogne-Liège",
@@ -197,7 +223,10 @@
         "twitter": "@LiegeBastogneL",
         "cancelled": false,
         "show": true,
-        "retweet": "1122516313820336129"
+        "retweet": "1122516313820336129",
+        "locations": [
+            "Liege"
+        ]
     },
     {
         "name": "Tour de Romandie",
@@ -207,7 +236,15 @@
         "twitter": "@TourDeRomandie",
         "cancelled": false,
         "show": true,
-        "retweet": "1125025877371363329"
+        "retweet": "1125025877371363329",
+        "locations": [
+            "Oron",
+            "Martigny",
+            "Saint-Imier",
+            "Payerne",
+            "Thyon",
+            "Fribourg"
+        ]
     },
     {
         "name": "Giro d'Italia",
@@ -217,7 +254,32 @@
         "twitter": "@giroditalia",
         "cancelled": false,
         "show": true,
-        "retweet": "1135204918544031744"
+        "retweet": "1135204918544031744",
+        "locations": [
+            "Budapest",
+            "Gyor",
+            "Nagykanizsa",
+            "Agrigento",
+            "Randazzo",
+            "Messina",
+            "Cosenza",
+            "Brindisi",
+            "Vieste",
+            "",
+            "Tortoreto",
+            "Rimini",
+            "Cesenatico",
+            "Monselice",
+            "Valdobbiadene",
+            "Piancavallo",
+            "",
+            "Udine",
+            "Madonna di Campiglio",
+            "Isolaccia",
+            "Asti",
+            "Sestriere",
+            "Milan"
+        ]
     },
     {
         "name": "Critérium du Dauphiné",
@@ -227,7 +289,17 @@
         "twitter": "@dauphine",
         "cancelled": false,
         "show": true,
-        "retweet": "873898873558900736"
+        "retweet": "873898873558900736",
+        "locations": [
+            "Lyon",
+            "Saint-Christo-en-Jarez",
+            "Saint-Vallier",
+            "Bourg-de-Peage",
+            "Sarcenas",
+            "Saint-Martin-de-Belleville",
+            "Megeve",
+            "Megeve"
+        ]
     },
     {
         "name": "Tour de Suisse",
@@ -237,7 +309,17 @@
         "twitter": "@tds",
         "cancelled": false,
         "show": true,
-        "retweet": "1142086608864366593"
+        "retweet": "1142086608864366593",
+        "locations": [
+            "Frauenfeld",
+            "Lachen",
+            "Pfaffnau",
+            "Moudon",
+            "Leukerbad",
+            "Disentis",
+            "Andermatt",
+            "Andermatt"
+        ]
     },
     {
         "name": "Tour de France",
@@ -247,7 +329,32 @@
         "twitter": "@LeTour",
         "cancelled": false,
         "show": true,
-        "retweet": "1155571339668971520"
+        "retweet": "1155571339668971520",
+        "locations": [
+            "Nice",
+            "Nice",
+            "Sisteron",
+            "Gap",
+            "Privas",
+            "Valleraugue",
+            "Lavaur",
+            "Loudenvielle",
+            "Laruns",
+            "",
+            "Saint-Martin-de-Re",
+            "Poitiers",
+            "Sarran",
+            "Claux",
+            "Lyon",
+            "Virieu-le-Petit",
+            "",
+            "Villard-de-Lans",
+            "Meribel",
+            "Bonneville",
+            "Champagnole",
+            "Plancher-les-Mines",
+            "Paris"
+        ]
     },
     {
         "name": "Tour de Pologne",

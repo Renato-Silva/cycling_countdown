@@ -8,7 +8,7 @@ var weather = require('openweather-apis');
 
 //////////////////////////////////////////////////////
 /////                                            /////
-/////       Cycling Countdown @DaysCycling       /////
+/////          Cycling Bot @CyclingBot           /////
 /////                                            /////
 //////////////////////////////////////////////////////
 
@@ -68,10 +68,14 @@ function checkEvents(){
                 //Check if locations are defined
                 if(obj.locations != undefined){
                     var stageNumber = getStageNumber(obj);
-                    console.log("Stage today: " + stageNumber);
-                    console.log("Location: " + obj.locations[stageNumber]);
+                    //Check if is a rest day (no location)
+                    if(obj.locations[stageNumber] != ""){
+                        console.log("Stage today: " + stageNumber);
+                        console.log("Location: " + obj.locations[stageNumber]);
 
-                    getWeatherReport(obj,obj.locations[stageNumber]);
+                        getWeatherReport(obj,obj.locations[stageNumber]);
+                    }
+
 
                 }
 
