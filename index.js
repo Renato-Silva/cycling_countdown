@@ -78,7 +78,7 @@ function checkEvents(){
 
             }else{
                 if(config.post){
-                    postTweet(client,obj.name + " has been cancelled!");
+                    postTweet(client,obj.name + " has been cancelled!" + obj.twitter + ' ' + obj.hashtag);
                 }
 
             }
