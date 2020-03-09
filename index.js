@@ -68,12 +68,14 @@ function checkEvents(){
                 //Check if locations are defined
                 if(obj.locations != undefined){
                     var stageNumber = getStageNumber(obj);
-                    //Check if is a rest day (no location)
-                    if(obj.locations[stageNumber] != ""){
-                        console.log("Stage today: " + stageNumber);
-                        console.log("Location: " + obj.locations[stageNumber]);
-
-                        getWeatherReport(obj,obj.locations[stageNumber]);
+                    if(stageNumber<=0){
+                        stageNumber = Math.abs(stageNumber);
+                        //Check if is a rest day (no location)
+                        if(obj.locations[stageNumber] != ""){
+                            console.log("Stage today: " + stageNumber);
+                            console.log("Location: " + obj.locations[stageNumber]);
+                            getWeatherReport(obj,obj.locations[stageNumber]);
+                        }
                     }
 
 
@@ -100,7 +102,7 @@ function getStageNumber(event){
     var now   = moment();
     var starts = moment(event.begin);
     var stage = moment.duration(starts.diff(now, 'days'));
-    return Math.abs(stage);
+    return stage;
 }
 
 
