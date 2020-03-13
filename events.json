@@ -125,7 +125,7 @@
         "end": "2020-03-29",
         "hashtag": "#GW20",
         "twitter": "@GentWevelgem",
-        "cancelled": false,
+        "cancelled": true,
         "show": true,
         "retweet": "1112368050228158464",
         "locations": [
@@ -232,7 +232,7 @@
         "name": "Tour de Romandie",
         "begin": "2020-04-28",
         "end": "2020-05-03",
-        "hashtag": "#DR2020",
+        "hashtag": "#TDR2020",
         "twitter": "@TourDeRomandie",
         "cancelled": false,
         "show": true,
